@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog | Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="clock">
+            <span class="hand" style="--clr:red; --ht:28px" id="hr"><i></i></span>
+            <span class="hand" style="--clr:white; --ht:35px" id="min"><i></i></span>
+            <span class="hand" style="--clr:green; --ht:42px" id="sec"><i></i></span>
+
+            <span class="digit" style="--num:1"><b>1</b></span>
+            <span class="digit" style="--num:2"><b>2</b></span>
+            <span class="digit" style="--num:3"><b>3</b></span>
+            <span class="digit" style="--num:4"><b>4</b></span>
+            <span class="digit" style="--num:5"><b>5</b></span>
+            <span class="digit" style="--num:6"><b>6</b></span>
+            <span class="digit" style="--num:7"><b>7</b></span>
+            <span class="digit" style="--num:8"><b>8</b></span>
+            <span class="digit" style="--num:9"><b>9</b></span>
+            <span class="digit" style="--num:10"><b>10</b></span>
+            <span class="digit" style="--num:11"><b>11</b></span>
+            <span class="digit" style="--num:12"><b>12</b></span>
+        </div>
+        <div class="digital_clock">
+            <b class="today"></b>
+            <p id="digital_clock">
+                <span class="hour"></span>
+                <span class="minute"></span>
+                <span class="second"></span>
+                <span class="session"></span>
+            </p>
+        </div>
+        <div class="input">
+            <input type="radio" name="clock" id="analog" value="Analog" onclick={radioClickHandler(this)}>
+            <label for="analog">Analog</label>
+            <input type="radio" name="clock" id="digital" value="Digital" onclick={radioClickHandler(this)}>
+            <label for="digital">Digital</label>
+        </div>
+    </section>
+
+    <!-- script here -->
+    <script src="index.js"></script>
+</body>
+
+</html>
